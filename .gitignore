@@ -43,6 +43,7 @@ venv.bak/
 .Trashes
 ehthumbs.db
 Thumbs.db
+*.pem
 
 # Node.js
 node_modules/
@@ -51,6 +52,11 @@ yarn-debug.log*
 yarn-error.log*
 .npm
 .eslintcache
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
 
 # React build
 frontend/build/
@@ -58,6 +64,9 @@ frontend/.env.local
 frontend/.env.development.local
 frontend/.env.test.local
 frontend/.env.production.local
+/build
+/.next/
+/out/
 
 # Data files (exclude raw data but keep structure)
 data/raw/*.csv
@@ -85,3 +94,11 @@ logs/
 
 # Environment variables
 .env
+.env*.local
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
